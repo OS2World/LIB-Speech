@@ -1,0 +1,46 @@
+Speech library from the rsynth project.
+for programmers
+
+set config.sys to speech.cfg and speech library
+SET SPEECH=F:\MMOS2\TALK
+
+Speech.cfg as 10 defferent configurations, wich can be given an name.
+For now it has to be edited manally, with no comments yet.
+
+For best results get a speech libray;
+see also bactalk and rsynth.
+
+very beta !
+
+Special string codes (and the reserved/free codes);
+
+~A(##)	- Set fractal, 1 .. 100				default =100
+~B(##)	- 8 or 16 bits 8/16					default = 8 or from function setbits
+~C(#)	- Cascade 0 .. 8 or on/off, on=8,off=0		default = 0
+~D(##)	- Volume db 1 .. 70					default = 60
+~E
+~F(####)	- Set frequency to ####				default =1330
+~F(###%)	- Set frequency (+/-)## percent 
+~G
+~H
+~I(#)		- Impulsive 0/1 or on/off				default = 0 (off)
+~J
+~K
+~L(###)	- Set flutter 0 .. 999				default = 0
+~M(#)	- Load model # 0 ..9 or name			default = 0 from speech.cfg
+~N
+~O
+~P(##)	- Seconds per frame 1 .. 199			default = 10
+~Q
+~R(##)	- Set sample rate 8,11,22,44			default = 8 or from function setsamprate
+~S(#)	- Set speed, 1 .. 9					default = 1
+~T(##)	- Set tiltdb 0 .. 24					default = 10
+~U(X)	-Device # 0(def) 1..maxdev			default = 0
+~V(#)	- Volume (harware) 0 .. 10			default = 10
+~W(##)	- Wait for ## tenths seconds
+~X()		- reset all values to defaults
+~Y
+~Z
+
+|		-enter (or leave) spell mode
+[<phon>]  	-phonemes
